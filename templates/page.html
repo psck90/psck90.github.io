@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+{% include 'header.html' %}
   <div class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-    <header class="mb-6">
+	<header class="mb-6 md:hidden block">
       <h1 class="text-3xl font-bold text-gray-900">Piotr Surowiec</h1>
       <p class="text-sm text-gray-600">Email: <a href="mailto:psurowiec90@gmail.com" class="text-blue-600 hover:underline">psurowiec90@gmail.com</a> | Tel: +44 7544350136</p>
-    </header>
-
+	</header> 
     <section class="mb-6">
       <h2 class="text-xl font-semibold text-gray-800 mb-2">About</h2>
       <p>
@@ -84,5 +83,4 @@
       <p>Brazilian Jiu Jitsu • Gym • Biohacking • Self-Development</p>
     </section>
   </div>
-
 {% endblock %}
